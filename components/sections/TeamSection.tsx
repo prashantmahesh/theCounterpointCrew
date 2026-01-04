@@ -5,8 +5,13 @@ const TeamSection: React.FC = () => {
   const vocalGroups = [
     {
       name: 'Bass',
-      image: '/team/Bass.jpg',
+      image: '/team/Bass.jpeg',
       description: 'The foundation of our harmony'
+    },
+    {
+      name: 'Tenor',
+      image: '/team/Tenor.jpg',
+      description: 'The powerful middle voice'
     },
     {
       name: 'Alto',
@@ -32,11 +37,11 @@ const TeamSection: React.FC = () => {
             Our Vocal Ensemble
           </h2>
           <p className="text-slate-400 text-base max-w-2xl mx-auto">
-            A 20-member collective bringing together three distinct vocal ranges in perfect harmony
+            A 20-member collective bringing together four distinct vocal ranges in perfect harmony
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {vocalGroups.map((group, index) => (
             <div key={index} className="group relative">
               <div className="absolute -inset-1 bg-gradient-to-br from-pastel-pink to-pastel-blue rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-1000 print:hidden"></div>
