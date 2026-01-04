@@ -1,0 +1,49 @@
+import React from 'react';
+import { Play } from 'lucide-react';
+
+interface HeroProps {
+  about: string;
+}
+
+const Hero: React.FC<HeroProps> = ({ about }) => {
+  return (
+    <header className="relative h-screen w-full overflow-hidden flex items-center justify-center print:h-[600px] print:overflow-hidden print:block print:relative">
+      <div className="absolute inset-0 z-0 print:absolute print:inset-0 print:h-full">
+        {/* Hero Background Image */}
+        <img 
+          src="/pictures/PIC02134 copy.jpg" 
+          className="absolute inset-0 w-full h-full object-cover opacity-80" 
+          alt="The Counterpoint Crew"
+          loading="eager"
+        />
+
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-transparent to-slate-900/80"></div>
+      </div>
+
+      <div className="relative z-10 text-center max-w-4xl px-6 mt-16 md:mt-20 print:pt-32">
+        <div className="mb-4 md:mb-6 flex justify-center print:hidden">
+          <span className="px-3 md:px-4 py-1 border border-pastel-blue/30 text-pastel-blue rounded-full text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] uppercase backdrop-blur-sm">
+            A capella group
+          </span>
+        </div>
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-black uppercase leading-tight md:leading-none tracking-tight mb-4 md:mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-500 drop-shadow-2xl print:text-white print:bg-none px-2">
+          The Counterpoint<br className="md:hidden"/> Crew
+        </h1>
+        <p className="text-base md:text-lg lg:text-xl text-slate-300 max-w-xl mx-auto mb-8 md:mb-10 font-light leading-relaxed print:text-slate-400 px-4">
+          {about}
+        </p>
+        <a href="https://www.instagram.com/thecounterpointcrew/" target="_blank" rel="noopener noreferrer" className="group relative inline-flex items-center gap-3 md:gap-4 mx-auto pl-6 md:pl-8 pr-2 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full hover:bg-white/10 transition-all print:hidden">
+          <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest">Watch us on Instagram</span>
+          <div className="w-10 h-10 bg-pastel-blue text-slate-900 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+            <Play size={14} fill="currentColor" className="ml-0.5" />
+          </div>
+        </a>
+      </div>
+    </header>
+  );
+};
+
+export default Hero;
+
