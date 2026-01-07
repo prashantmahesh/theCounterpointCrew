@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Instagram, Phone } from 'lucide-react';
+import { Mail, Instagram } from 'lucide-react';
 
 interface FooterProps {
   groupName: string;
@@ -24,11 +24,6 @@ const Footer: React.FC<FooterProps> = ({ groupName }) => {
             <a href="https://www.instagram.com/thecounterpointcrew/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-6 py-4 rounded-full bg-white/5 hover:bg-white/10 hover:text-pastel-pink transition-all border border-white/10 group">
               <Instagram size={20} className="group-hover:scale-110 transition-transform" />
               <span className="font-medium">Instagram</span>
-            </a>
-            
-            <a href="tel:+919886288626" className="flex items-center gap-3 px-6 py-4 rounded-full bg-white/5 hover:bg-white/10 hover:text-pastel-blue transition-all border border-white/10 group">
-              <Phone size={20} className="group-hover:scale-110 transition-transform" />
-              <span className="font-medium">Call / WhatsApp</span>
             </a>
           </div>
         </div>
