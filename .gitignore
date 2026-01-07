@@ -23,3 +23,6 @@ instructions.md
 *.njsproj
 *.sln
 *.sw?
+
+# Image backups
+*.original
