@@ -7,8 +7,8 @@ const staticData: AcapellaData = {
   upcomingShows: [
     {
       date: "February 14, 2026",
-      title: "Bollywood Night",
-      location: "The Garden Pavillion"
+      title: "Sounds like Love",
+      location: "Underline Center, Indiranagar"
     }
   ],
   pastPerformances: [
