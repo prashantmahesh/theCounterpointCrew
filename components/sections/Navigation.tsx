@@ -4,7 +4,13 @@ const Navigation: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4 md:py-6 flex justify-between items-center pointer-events-none print:absolute print:bg-transparent print:pointer-events-auto">
       <div className="bg-black/30 backdrop-blur-md px-4 md:px-6 py-2 md:py-3 rounded-full border border-white/10 pointer-events-auto flex gap-3 md:gap-6 items-center print:bg-transparent print:border-none print:px-0">
-        <a href="#" className="font-serif font-bold tracking-wider text-xs md:text-sm text-pastel-blue uppercase print:text-pastel-blue hover:text-pastel-pink transition-colors cursor-pointer whitespace-nowrap">TCC</a>
+        <a href="#" className="flex items-center cursor-pointer hover:opacity-80 transition-opacity">
+          <img 
+            src="/logo/logo-white.png" 
+            alt="The Counterpoint Crew" 
+            className="h-10 md:h-12 w-auto"
+          />
+        </a>
         <div className="h-4 w-[1px] bg-white/20 print:hidden hidden md:block"></div>
         <div className="hidden md:flex gap-4 text-xs font-medium text-slate-300 print:text-slate-400">
           <a href="#about" className="hover:text-white hover:glow-text transition-colors">About Us</a>

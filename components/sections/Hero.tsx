@@ -28,7 +28,9 @@ const Hero: React.FC<HeroProps> = ({ about }) => {
             A capella group
           </span>
         </div>
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-black uppercase leading-tight md:leading-none tracking-tight mb-4 md:mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-500 drop-shadow-2xl print:text-white print:bg-none px-2">
+        <h1 
+          className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif font-black uppercase leading-tight md:leading-none tracking-tight mb-4 md:mb-6 text-[#e6e6e6] drop-shadow-2xl px-2"
+        >
           The Counterpoint<br className="md:hidden"/> Crew
         </h1>
         <p className="text-base md:text-lg lg:text-xl text-slate-300 max-w-xl mx-auto mb-8 md:mb-10 font-light leading-relaxed print:text-slate-400 px-4">

@@ -5,7 +5,7 @@ const TeamSection: React.FC = () => {
   const vocalGroups = [
     {
       name: 'Bass',
-      image: '/team/Bass.jpeg',
+      image: '/team/Bass.jpg',
       description: 'The foundation of our harmony'
     },
     {
@@ -44,7 +44,7 @@ const TeamSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {vocalGroups.map((group, index) => (
             <div key={index} className="group relative">
-              <div className="absolute -inset-1 bg-gradient-to-br from-pastel-pink to-pastel-blue rounded-2xl blur opacity-20 group-hover:opacity-40 transition-opacity duration-1000 print:hidden"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-br from-pastel-pink to-pastel-blue rounded-2xl blur-sm opacity-10 group-hover:opacity-25 transition-opacity duration-1000 print:hidden"></div>
               <div className="relative bg-slate-800 rounded-2xl overflow-hidden border border-white/10 shadow-2xl print:border-slate-700">
                 {/* Image */}
                 <div className="aspect-[4/3] overflow-hidden">

@@ -38,9 +38,6 @@ const TemplateCinematic: React.FC<Props> = ({ data }) => {
       <Hero about={data.about} />
       <TickerTape shows={data.upcomingShows} />
       <AboutSection />
-      <FounderSection />
-      <TeamSection />
-      <Gallery />
       <FeaturedPerformance 
         performance={data.pastPerformances[0]} 
         onOpenModal={openModal} 
@@ -50,6 +47,9 @@ const TemplateCinematic: React.FC<Props> = ({ data }) => {
         upcomingShows={data.upcomingShows}
         onOpenModal={openModal}
       />
+      <FounderSection />
+      <TeamSection />
+      <Gallery />
       <Footer groupName={data.groupName} />
       
       {modalOpen && selectedReel && (
