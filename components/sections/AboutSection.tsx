@@ -14,7 +14,7 @@ const AboutSection: React.FC = () => {
             The Counterpoint Crew
           </h2>
           <p className="text-slate-400 leading-relaxed text-lg print:text-slate-300">
-            Counterpoint Crew is an 20-member vocal ensemble based in Bangalore that blends classical techniques with contemporary repertoire. Born from a love of rich harmonies and collaborative arrangement, the Crew presents vocal textures that move fluidly between contemporary melodies, film music and western choral numbers
+            Counterpoint Crew is a 20-member vocal ensemble based in Bangalore that blends classical techniques with contemporary repertoire. Born from a love of rich harmonies and collaborative arrangement, the Crew presents vocal textures that move fluidly between contemporary melodies, film music and western choral numbers
           </p>
         </div>
 
