@@ -8,7 +8,7 @@ const staticData: AcapellaData = {
     {
       date: "February 14, 2026",
       title: "Sounds like love",
-      location: "TBD"
+      location: "Underline Center, Bangalore"
     }
   ],
   pastPerformances: [
