@@ -7,8 +7,13 @@ const staticData: AcapellaData = {
   upcomingShows: [
     {
       date: "February 14, 2026",
-      title: "Sounds like love",
-      location: "Underline Center, Bangalore"
+      title: "Sounds like Love",
+      location: "Underline Center, Indiranagar"
+    },
+    {
+      date: "February 15, 2026 · 8:00 AM – 9:00 AM",
+      title: "Heritage Beku",
+      location: "Bandstand, Cubbon Park"
     }
   ],
   pastPerformances: [
