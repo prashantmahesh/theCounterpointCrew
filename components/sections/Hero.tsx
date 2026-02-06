@@ -48,48 +48,19 @@ const Hero: React.FC<HeroProps> = ({ about }) => {
               <p className="text-sm text-slate-400 mt-2">Book your tickets now</p>
             </div>
 
-            {/* Booking Buttons */}
+            {/* Booking Button */}
             <div className="flex flex-wrap justify-center items-center gap-3">
-              {/* BookMyShow - Red Button */}
-              <a 
-                href="https://in.bookmyshow.com/events/sounds-like-love-by-the-counterpoint-crew/ET00481922" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="inline-flex items-center gap-3 px-6 py-3.5 bg-[#C4242B] text-white font-semibold text-sm rounded-full border-2 border-[#C4242B] hover:bg-[#A01F25] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                <img 
-                  src="https://assets-in.bmscdn.com/webin/common/icons/logo.svg" 
-                  alt="BookMyShow" 
-                  className="h-5 w-auto object-contain brightness-0 invert"
-                />
-              </a>
-
-              {/* District - Black Button */}
-              <a 
-                href="https://link.district.in/DSTRKT/atcea6k5" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              {/* District */}
+              <a
+                href="https://link.district.in/DSTRKT/atcea6k5"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center p-3.5 bg-black text-white font-semibold text-sm rounded-full hover:bg-[#E23744] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
-                <img 
-                  src="https://b.zmtcdn.com/data/edition_assets/17466982242413.svg" 
-                  alt="District" 
+                <img
+                  src="https://b.zmtcdn.com/data/edition_assets/17466982242413.svg"
+                  alt="District"
                   className="h-9 w-auto object-contain"
-                />
-              </a>
-
-              {/* Urbanaut - White Button with Border */}
-              <a 
-                href="https://urbanaut.app/spot/sounds-like-love-by-the-counterpoint-crew" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="group inline-flex items-center justify-center p-3.5 bg-white text-black rounded-full border-2 border-black transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                <img 
-                  src="/logo/urbanaut.webp" 
-                  alt="Urbanaut" 
-                  className="h-7 object-contain"
-                  style={{ width: '100px', overflow: 'visible' }}
                 />
               </a>
             </div>
