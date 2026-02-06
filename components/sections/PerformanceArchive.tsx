@@ -79,11 +79,60 @@ const PerformanceArchive: React.FC<PerformanceArchiveProps> = ({ performances, u
             <Calendar className="text-pastel-blue mb-4 print:text-blue-300" size={32} />
             <div>
               <h4 className="text-xl font-serif font-bold text-white mb-6">Upcoming Shows</h4>
-              <ul className="space-y-4">
+              <ul className="space-y-6">
                 {upcomingShows.slice(0, 2).map((show, i) => (
                   <li key={i} className="border-l-2 border-white/10 pl-4 py-1 hover:border-pastel-pink transition-colors print:border-slate-600">
                     <div className="text-xs text-pastel-pink font-bold uppercase print:text-pink-400">{show.date}</div>
-                    <div className="text-sm font-medium text-slate-300 print:text-slate-300">{show.title}</div>
+                    <div className="text-sm font-medium text-slate-300 mb-3 print:text-slate-300">{show.title}</div>
+                    
+                    {/* Booking Buttons - Small Icons */}
+                    <div className="flex items-center gap-2 print:hidden">
+                      {/* BookMyShow */}
+                      <a 
+                        href="https://in.bookmyshow.com/events/sounds-like-love-by-the-counterpoint-crew/ET00481922" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center justify-center px-2.5 py-1.5 bg-[#C4242B] text-white font-semibold rounded-full border border-[#C4242B] hover:bg-[#A01F25] transition-all duration-300 hover:scale-105"
+                        title="Book on BookMyShow"
+                      >
+                        <img 
+                          src="https://assets-in.bmscdn.com/webin/common/icons/logo.svg" 
+                          alt="BookMyShow" 
+                          className="h-3 w-auto object-contain brightness-0 invert"
+                        />
+                      </a>
+
+                      {/* District */}
+                      <a 
+                        href="https://link.district.in/DSTRKT/atcea6k5" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center justify-center p-1.5 bg-black text-white rounded-full hover:bg-[#E23744] transition-all duration-300 hover:scale-105"
+                        title="Book on District"
+                      >
+                        <img 
+                          src="https://b.zmtcdn.com/data/edition_assets/17466982242413.svg" 
+                          alt="District" 
+                          className="h-5 w-auto object-contain"
+                        />
+                      </a>
+
+                      {/* Urbanaut */}
+                      <a 
+                        href="https://urbanaut.app/spot/sounds-like-love-by-the-counterpoint-crew" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="inline-flex items-center justify-center p-1.5 bg-white text-black rounded-full border border-black transition-all duration-300 hover:scale-105"
+                        title="Book on Urbanaut"
+                      >
+                        <img 
+                          src="/logo/urbanaut.webp" 
+                          alt="Urbanaut" 
+                          className="h-4 object-contain"
+                          style={{ width: '50px', overflow: 'visible' }}
+                        />
+                      </a>
+                    </div>
                   </li>
                 ))}
               </ul>
