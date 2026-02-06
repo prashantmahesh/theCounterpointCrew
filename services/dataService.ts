@@ -8,12 +8,14 @@ const staticData: AcapellaData = {
     {
       date: "February 14, 2026",
       title: "Sounds like Love",
-      location: "Underline Center, Indiranagar"
+      location: "Underline Center, Indiranagar",
+      ticketLink: "https://link.district.in/DSTRKT/atcea6k5"
     },
     {
       date: "February 15, 2026 · 8:00 AM – 9:00 AM",
       title: "Heritage Beku",
-      location: "Bandstand, Cubbon Park"
+      location: "Bandstand, Cubbon Park",
+      badge: "Open for all"
     }
   ],
   pastPerformances: [

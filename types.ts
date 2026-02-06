@@ -2,6 +2,8 @@ export interface Show {
   date: string;
   title: string;
   location: string;
+  ticketLink?: string;
+  badge?: string;
 }
 
 export interface Performance {

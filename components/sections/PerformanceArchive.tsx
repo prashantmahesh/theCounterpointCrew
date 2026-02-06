@@ -12,6 +12,8 @@ interface Show {
   date: string;
   title: string;
   location: string;
+  ticketLink?: string;
+  badge?: string;
 }
 
 interface PerformanceArchiveProps {
@@ -85,15 +87,17 @@ const PerformanceArchive: React.FC<PerformanceArchiveProps> = ({ performances, u
                     <div className="text-xs text-pastel-pink font-bold uppercase print:text-pink-400">{show.date}</div>
                     <div className="text-sm font-medium text-slate-300 mb-3 print:text-slate-300">{show.title}</div>
                     
-                    {/* Booking Button */}
+                    {show.badge && (
+                      <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-pastel-mint text-slate-900 rounded-full">{show.badge}</span>
+                    )}
+                    {show.ticketLink && (
                     <div className="flex items-center gap-2 print:hidden">
-                      {/* District */}
                       <a
-                        href="https://link.district.in/DSTRKT/atcea6k5"
+                        href={show.ticketLink}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center p-1.5 bg-black text-white rounded-full hover:bg-[#E23744] transition-all duration-300 hover:scale-105"
-                        title="Book on District"
+                        title="Book tickets"
                       >
                         <img
                           src="https://b.zmtcdn.com/data/edition_assets/17466982242413.svg"
@@ -102,6 +106,7 @@ const PerformanceArchive: React.FC<PerformanceArchiveProps> = ({ performances, u
                         />
                       </a>
                     </div>
+                    )}
                   </li>
                 ))}
               </ul>
