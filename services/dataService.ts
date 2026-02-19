@@ -6,14 +6,22 @@ const staticData: AcapellaData = {
   about: "A collective of vocal artists dedicated to blending modern pop with classical choral arrangements, all wrapped in a soft, acoustic aesthetic. We believe in the power of the human voice to create textures as rich and varied as a pastel palette.",
   upcomingShows: [
     {
-      date: "February 14, 2026",
-      title: "Sounds like Love",
-      location: "Underline Center, Indiranagar"
+      date: "March 1, 2026 · 6:00 PM",
+      title: "Note-Worthy",
+      location: "Legato School of Music, Kalyan Nagar",
+      ticketLink: "https://link.district.in/DSTRKT/i205kvnv"
     },
     {
-      date: "February 15, 2026 · 8:00 AM – 9:00 AM",
+      date: "February 15, 2026",
       title: "Heritage Beku",
-      location: "Bandstand, Cubbon Park"
+      location: "Bandstand, Cubbon Park",
+      past: true
+    },
+    {
+      date: "February 14, 2026",
+      title: "Sounds like Love",
+      location: "Underline Center, Indiranagar",
+      past: true
     }
   ],
   pastPerformances: [
