@@ -14,6 +14,7 @@ interface Show {
   location: string;
   ticketLink?: string;
   badge?: string;
+  past?: boolean;
 }
 
 interface PerformanceArchiveProps {
@@ -23,6 +24,9 @@ interface PerformanceArchiveProps {
 }
 
 const PerformanceArchive: React.FC<PerformanceArchiveProps> = ({ performances, upcomingShows, onOpenModal }) => {
+  const upcoming = upcomingShows.filter(s => !s.past);
+  const pastShows = upcomingShows.filter(s => s.past);
+
   // Map performance titles to cover art images
   const coverArtMap: { [key: string]: string } = {
     'Sangathil': '/reel/sangathil.jpeg',
@@ -82,11 +86,11 @@ const PerformanceArchive: React.FC<PerformanceArchiveProps> = ({ performances, u
             <div>
               <h4 className="text-xl font-serif font-bold text-white mb-6">Upcoming Shows</h4>
               <ul className="space-y-6">
-                {upcomingShows.slice(0, 2).map((show, i) => (
+                {upcoming.map((show, i) => (
                   <li key={i} className="border-l-2 border-white/10 pl-4 py-1 hover:border-pastel-pink transition-colors print:border-slate-600">
                     <div className="text-xs text-pastel-pink font-bold uppercase print:text-pink-400">{show.date}</div>
                     <div className="text-sm font-medium text-slate-300 mb-3 print:text-slate-300">{show.title}</div>
-                    
+
                     {show.badge && (
                       <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-pastel-mint text-slate-900 rounded-full">{show.badge}</span>
                     )}
@@ -111,6 +115,19 @@ const PerformanceArchive: React.FC<PerformanceArchiveProps> = ({ performances, u
                 ))}
               </ul>
             </div>
+            {pastShows.length > 0 && (
+              <div className="mt-8 pt-6 border-t border-white/5">
+                <h4 className="text-sm font-serif font-bold text-slate-500 mb-4 uppercase tracking-wider">Past Shows</h4>
+                <ul className="space-y-4">
+                  {pastShows.map((show, i) => (
+                    <li key={i} className="border-l-2 border-white/5 pl-4 py-1">
+                      <div className="text-xs text-slate-500 font-bold uppercase">{show.date}</div>
+                      <div className="text-sm font-medium text-slate-500">{show.title}</div>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <button className="mt-8 w-full py-3 bg-white/5 border border-white/10 rounded-lg text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all print:border-slate-600 print:text-white">
               Full Schedule
             </button>

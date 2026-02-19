@@ -4,6 +4,7 @@ export interface Show {
   location: string;
   ticketLink?: string;
   badge?: string;
+  past?: boolean;
 }
 
 export interface Performance {

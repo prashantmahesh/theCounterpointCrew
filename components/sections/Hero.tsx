@@ -42,9 +42,9 @@ const Hero: React.FC<HeroProps> = ({ about }) => {
           <div className="grid grid-cols-1 gap-6 items-center">
             {/* Event Info */}
             <div className="text-center">
-              <p className="text-xs md:text-sm text-pastel-pink font-bold uppercase tracking-wider mb-3">14th February 2026</p>
-              <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-2">Sounds Like Love</h3>
-              <p className="text-base md:text-lg text-slate-300 font-medium">Underline Center, Bangalore</p>
+              <p className="text-xs md:text-sm text-pastel-pink font-bold uppercase tracking-wider mb-3">1st March 2026 · 6:00 PM</p>
+              <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-2">Note-Worthy</h3>
+              <p className="text-base md:text-lg text-slate-300 font-medium">Legato School of Music, Kalyan Nagar</p>
               <p className="text-sm text-slate-400 mt-2">Book your tickets now</p>
             </div>
 
@@ -52,7 +52,7 @@ const Hero: React.FC<HeroProps> = ({ about }) => {
             <div className="flex flex-wrap justify-center items-center gap-3">
               {/* District */}
               <a
-                href="https://link.district.in/DSTRKT/atcea6k5"
+                href="https://link.district.in/DSTRKT/i205kvnv"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center p-3.5 bg-black text-white font-semibold text-sm rounded-full hover:bg-[#E23744] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
