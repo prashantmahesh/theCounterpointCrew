@@ -6,10 +6,10 @@ const staticData: AcapellaData = {
   about: "A collective of vocal artists dedicated to blending modern pop with classical choral arrangements, all wrapped in a soft, acoustic aesthetic. We believe in the power of the human voice to create textures as rich and varied as a pastel palette.",
   upcomingShows: [
     {
-      date: "March 1, 2026 · 6:00 PM",
+      date: "March 1, 2026",
       title: "Note-Worthy",
       location: "Legato School of Music, Kalyan Nagar",
-      ticketLink: "https://link.district.in/DSTRKT/i205kvnv"
+      past: true
     },
     {
       date: "February 15, 2026",
