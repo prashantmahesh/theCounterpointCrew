@@ -10,13 +10,20 @@ const Gallery: React.FC = () => {
     '/pictures/Ish-10.jpg',
     '/pictures/Ish-27.jpg',
     '/pictures/Ish-48.jpg',
+    '/pictures/6725ca95-64aa-422e-bf43-c2f359eb3590_rw_1920.jpg',
     '/pictures/Ish-63.jpg',
     '/pictures/PIC01953 copy.jpg',
+    '/pictures/9c5641b0-eabd-492e-86b9-8446f8805685_rw_1920.jpg',
     '/pictures/PIC01999 copy.jpg',
+    '/pictures/a55f0989-ba30-4306-9bbc-7e3f184ba058_rw_1920.jpg',
     '/pictures/PIC02105 copy (1).jpg',
+    '/pictures/ccb76eab-061d-43c6-b717-9654a15e77f8_rw_1920.jpg',
     '/pictures/PIC02117 copy.jpg',
+    '/pictures/e257b30c-a931-4a56-b00b-357a47cae59d_rw_1920.jpg',
     '/pictures/PIC02134 copy.jpg',
+    '/pictures/ea0d9c9d-c1db-45f0-9571-21935af7469a_rw_1920.jpg',
     '/pictures/VideoCapture_20251216-160006.jpg',
+    '/pictures/f13b9c8b-06dd-4abb-8ab6-8c25e5b956e4_rw_1920.jpg',
     '/pictures/VideoCapture_20251216-160244.jpg'
   ];
 
