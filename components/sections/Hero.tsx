@@ -36,37 +36,6 @@ const Hero: React.FC<HeroProps> = ({ about }) => {
         <p className="text-base md:text-lg lg:text-xl text-slate-300 max-w-xl mx-auto mb-6 md:mb-8 font-light leading-relaxed print:text-slate-400 px-4">
           {about}
         </p>
-        
-        {/* Show Announcement Card */}
-        <div className="mb-6 print:hidden bg-transparent border border-transparent rounded-2xl p-6 md:p-8 max-w-3xl mx-auto">
-          <div className="grid grid-cols-1 gap-6 items-center">
-            {/* Event Info */}
-            <div className="text-center">
-              <p className="text-xs md:text-sm text-pastel-pink font-bold uppercase tracking-wider mb-3">1st March 2026 · 6:00 PM</p>
-              <h3 className="text-2xl md:text-3xl font-serif font-bold text-white mb-2">Note-Worthy</h3>
-              <p className="text-base md:text-lg text-slate-300 font-medium">Legato School of Music, Kalyan Nagar</p>
-              <p className="text-sm text-slate-400 mt-2">Book your tickets now</p>
-            </div>
-
-            {/* Booking Button */}
-            <div className="flex flex-wrap justify-center items-center gap-3">
-              {/* District */}
-              <a
-                href="https://link.district.in/DSTRKT/i205kvnv"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center p-3.5 bg-black text-white font-semibold text-sm rounded-full hover:bg-[#E23744] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
-              >
-                <img
-                  src="https://b.zmtcdn.com/data/edition_assets/17466982242413.svg"
-                  alt="District"
-                  className="h-9 w-auto object-contain"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-
         {/* Instagram Link */}
         <a href="https://www.instagram.com/thecounterpointcrew/" target="_blank" rel="noopener noreferrer" className="group relative inline-flex items-center gap-3 md:gap-4 mx-auto pl-6 md:pl-8 pr-2 py-2 mt-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full hover:bg-white/10 transition-all print:hidden">
           <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest">Watch us on Instagram</span>
