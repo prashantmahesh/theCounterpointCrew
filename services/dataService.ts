@@ -26,6 +26,12 @@ const staticData: AcapellaData = {
   ],
   pastPerformances: [
     {
+      title: "Santhoshakke",
+      description: "A timeless Ilaiyaraaja classic from Geetha that every Kannadiga resonates to.",
+      imageAlt: "Silhouette of a singer performing at sunset",
+      reelId: "DVLGXYhEcj9"
+    },
+    {
       title: "Sangathil",
       description: "Unspoken emotions, love expressed through melody and silence.",
       imageAlt: "Group performing in an autumn park with falling leaves",
