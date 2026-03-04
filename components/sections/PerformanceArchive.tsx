@@ -29,6 +29,7 @@ const PerformanceArchive: React.FC<PerformanceArchiveProps> = ({ performances, u
 
   // Map performance titles to cover art images
   const coverArtMap: { [key: string]: string } = {
+    'Santhoshakke': '/reel/santhoshakke.jpeg',
     'Sangathil': '/reel/sangathil.jpeg',
     'Meri Maa': '/reel/merimaa.jpeg',
     'Ave Maria': '/reel/avemaria.jpeg'
