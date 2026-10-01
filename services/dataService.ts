@@ -6,6 +6,12 @@ const staticData: AcapellaData = {
   about: "A collective of vocal artists dedicated to blending modern pop with classical choral arrangements, all wrapped in a soft, acoustic aesthetic. We believe in the power of the human voice to create textures as rich and varied as a pastel palette.",
   upcomingShows: [
     {
+      date: "October 25, 2026 · 7:00 PM",
+      title: "Dakshin Diaries",
+      location: "Alliance Française de Bangalore",
+      ticketLink: "https://link.district.in/DSTRKT/qimqcg5s"
+    },
+    {
       date: "March 1, 2026",
       title: "Note-Worthy",
       location: "Legato School of Music, Kalyan Nagar",
