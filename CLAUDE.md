@@ -37,3 +37,9 @@ Images are in `public/` organized into `logo/`, `pictures/`, `reel/`, and `team/
 ### Path Aliases
 
 `@/*` maps to the project root (configured in `tsconfig.json`).
+
+## Pull Requests
+
+For any visual change (images, layout, styling), include before/after screenshots at desktop and phone widths in the PR description. To keep binaries out of `main`, commit the screenshots to `docs/pr-screenshots/`, push, link them in the PR body by that commit's SHA (`https://github.com/prashantmahesh/theCounterpointCrew/blob/<sha>/docs/pr-screenshots/<file>.png?raw=true`), then delete them in a follow-up commit on the same branch.
+
+If the Tailwind CDN is blocked (as in sandboxed cloud sessions), build the CSS locally with `tailwindcss@3` using the inline config from `index.html` and have Playwright serve it in place of the `cdn.tailwindcss.com` request.
