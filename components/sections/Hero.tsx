@@ -11,8 +11,8 @@ const Hero: React.FC<HeroProps> = ({ about }) => {
       <div className="absolute inset-0 z-0 print:absolute print:inset-0 print:h-full">
         {/* Hero Background Image */}
         <img 
-          src="/pictures/PIC02134 copy.jpg" 
-          className="absolute inset-0 w-full h-full object-cover opacity-80" 
+          src="/pictures/f13b9c8b-06dd-4abb-8ab6-8c25e5b956e4_rw_1920.jpg" 
+          className="absolute inset-0 w-full h-full object-cover object-[50%_60%] opacity-80" 
           alt="The Counterpoint Crew"
           loading="eager"
         />
