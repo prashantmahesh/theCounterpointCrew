@@ -24,7 +24,13 @@ const Gallery: React.FC = () => {
     '/pictures/ea0d9c9d-c1db-45f0-9571-21935af7469a_rw_1920.jpg',
     '/pictures/VideoCapture_20251216-160006.jpg',
     '/pictures/f13b9c8b-06dd-4abb-8ab6-8c25e5b956e4_rw_1920.jpg',
-    '/pictures/VideoCapture_20251216-160244.jpg'
+    '/pictures/VideoCapture_20251216-160244.jpg',
+    '/pictures/crew-singing-full.jpg',
+    '/pictures/conductor-arms-raised.jpg',
+    '/pictures/crew-singing-closeup.jpg',
+    '/pictures/conductor-shelves.jpg',
+    '/pictures/conductor-profile.jpg',
+    '/pictures/conductor-baton.jpg'
   ];
 
   useEffect(() => {
