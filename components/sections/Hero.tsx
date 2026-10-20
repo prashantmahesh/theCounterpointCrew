@@ -64,6 +64,17 @@ const Hero: React.FC<HeroProps> = ({ about }) => {
                   className="h-9 w-auto object-contain"
                 />
               </a>
+
+              {/* Putting Scene */}
+              <a
+                href="https://puttingscene.com/events/F3ASKJ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2.5 h-16 px-6 bg-white text-slate-900 font-bold text-sm uppercase tracking-widest rounded-full hover:bg-pastel-pink transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                <img src="/logo/puttingscene.png" alt="" className="h-8 w-auto object-contain" />
+                Putting Scene
+              </a>
             </div>
           </div>
         </div>

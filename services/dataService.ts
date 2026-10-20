@@ -9,7 +9,8 @@ const staticData: AcapellaData = {
       date: "October 25, 2026 · 7:00 PM",
       title: "Dakshin Diaries",
       location: "Alliance Française de Bangalore",
-      ticketLink: "https://link.district.in/DSTRKT/qimqcg5s"
+      ticketLink: "https://link.district.in/DSTRKT/qimqcg5s",
+      altTicketLink: "https://puttingscene.com/events/F3ASKJ"
     },
     {
       date: "March 1, 2026",
