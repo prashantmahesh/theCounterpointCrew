@@ -13,6 +13,7 @@ interface Show {
   title: string;
   location: string;
   ticketLink?: string;
+  altTicketLink?: string;
   badge?: string;
   past?: boolean;
 }
@@ -101,7 +102,7 @@ const PerformanceArchive: React.FC<PerformanceArchiveProps> = ({ performances, u
                         href={show.ticketLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center justify-center p-1.5 bg-black text-white rounded-full hover:bg-[#E23744] transition-all duration-300 hover:scale-105"
+                        className="inline-flex items-center justify-center w-32 h-8 px-2 bg-black text-white rounded-full hover:bg-[#E23744] transition-all duration-300 hover:scale-105"
                         title="Book tickets"
                       >
                         <img
@@ -110,6 +111,18 @@ const PerformanceArchive: React.FC<PerformanceArchiveProps> = ({ performances, u
                           className="h-5 w-auto object-contain"
                         />
                       </a>
+                      {show.altTicketLink && (
+                        <a
+                          href={show.altTicketLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center justify-center gap-1.5 w-32 h-8 px-2 whitespace-nowrap bg-white text-slate-900 text-[10px] font-bold uppercase tracking-wide rounded-full hover:bg-pastel-pink transition-all duration-300 hover:scale-105"
+                          title="Book tickets on Putting Scene"
+                        >
+                          <img src="/logo/puttingscene.png" alt="" className="h-4 w-auto object-contain" />
+                          Putting Scene
+                        </a>
+                      )}
                     </div>
                     )}
                   </li>

@@ -56,13 +56,24 @@ const Hero: React.FC<HeroProps> = ({ about }) => {
                 href="https://link.district.in/DSTRKT/qimqcg5s"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center p-3.5 bg-black text-white font-semibold text-sm rounded-full hover:bg-[#E23744] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                className="inline-flex items-center justify-center w-48 h-16 px-4 bg-black text-white font-semibold text-sm rounded-full hover:bg-[#E23744] transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 <img
                   src="https://b.zmtcdn.com/data/edition_assets/17466982242413.svg"
                   alt="District"
                   className="h-9 w-auto object-contain"
                 />
+              </a>
+
+              {/* Putting Scene */}
+              <a
+                href="https://puttingscene.com/events/F3ASKJ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 w-48 h-16 px-4 whitespace-nowrap bg-white text-slate-900 font-bold text-xs uppercase tracking-wide rounded-full hover:bg-pastel-pink transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+              >
+                <img src="/logo/puttingscene.png" alt="" className="h-7 w-auto object-contain" />
+                Putting Scene
               </a>
             </div>
           </div>

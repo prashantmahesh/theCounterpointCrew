@@ -3,6 +3,7 @@ export interface Show {
   title: string;
   location: string;
   ticketLink?: string;
+  altTicketLink?: string;
   badge?: string;
   past?: boolean;
 }
